@@ -5,65 +5,65 @@ import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { SectionTitle } from "@/components/SectionTitle";
 import { ProjectCard } from "@/components/ProjectCard";
-import heroImage from "@/assets/hero-construction.jpg";
-import projectRoad from "@/assets/project-road.jpg";
-import projectBuilding from "@/assets/project-building.jpg";
-import projectBridge from "@/assets/project-bridge.jpg";
+import heroImage from "@/assets/hero-home.jpg";
+import projectVilla from "@/assets/project-villa.jpg";
+import projectTownhouse from "@/assets/project-townhouse.jpg";
+import projectFamilyHome from "@/assets/project-family-home.jpg";
+import homeConstruction from "@/assets/home-construction.jpg";
 
 const projects = [
   {
-    image: projectRoad,
-    title: "Autoroute Nationale N1",
-    category: "Routes",
-    location: "Cotonou - Porto-Novo",
+    image: projectVilla,
+    title: "Villa Moderne Akpakpa",
+    category: "Villa de Luxe",
+    location: "Akpakpa, Cotonou",
     description:
-      "Construction de 45 km d'autoroute à 2x2 voies reliant les deux plus grandes villes du Bénin.",
+      "Villa contemporaine de 350 m² avec piscine, jardin tropical et finitions haut de gamme.",
   },
   {
-    image: projectBuilding,
-    title: "Centre Commercial Étoile",
-    category: "Bâtiments",
-    location: "Cotonou, Bénin",
+    image: projectTownhouse,
+    title: "Résidence Les Palmiers",
+    category: "Logements",
+    location: "Abomey-Calavi",
     description:
-      "Complexe commercial moderne de 25 000 m² avec parking souterrain et espaces verts.",
+      "Ensemble de 12 logements modernes avec espaces communs et parking sécurisé.",
   },
   {
-    image: projectBridge,
-    title: "Pont de l'Ouémé",
-    category: "Génie Civil",
-    location: "Ouémé, Bénin",
+    image: projectFamilyHome,
+    title: "Maison Familiale Fidjrossè",
+    category: "Maison Individuelle",
+    location: "Fidjrossè, Cotonou",
     description:
-      "Ouvrage d'art de 850 mètres traversant le fleuve Ouémé, facilitant le transport régional.",
+      "Maison familiale de 180 m² sur deux niveaux avec terrasse et jardin privatif.",
   },
   {
-    image: projectBuilding,
-    title: "Siège Social BCEAO",
-    category: "Bâtiments",
-    location: "Cotonou, Bénin",
+    image: homeConstruction,
+    title: "Villa Cadjèhoun",
+    category: "Villa de Luxe",
+    location: "Cadjèhoun, Cotonou",
     description:
-      "Immeuble de bureaux haut de gamme de 12 étages avec certification environnementale.",
+      "Villa de standing avec 5 chambres, bureau, et aménagements extérieurs complets.",
   },
   {
-    image: projectRoad,
-    title: "Boulevard de la Marina",
-    category: "Routes",
-    location: "Cotonou, Bénin",
+    image: projectVilla,
+    title: "Duplex Godomey",
+    category: "Maison Individuelle",
+    location: "Godomey, Abomey-Calavi",
     description:
-      "Réaménagement urbain complet incluant voies de circulation, pistes cyclables et espaces piétons.",
+      "Duplex moderne de 220 m² avec garage double et terrasse panoramique.",
   },
   {
-    image: projectBridge,
-    title: "Échangeur de Godomey",
-    category: "Génie Civil",
-    location: "Abomey-Calavi, Bénin",
+    image: projectFamilyHome,
+    title: "Maison Calavi Centre",
+    category: "Maison Individuelle",
+    location: "Abomey-Calavi",
     description:
-      "Échangeur à plusieurs niveaux améliorant la fluidité du trafic dans la zone périurbaine.",
+      "Maison de plain-pied avec 4 chambres, cuisine équipée et grand séjour lumineux.",
   },
 ];
 
-const categories = ["Tous", "Bâtiments", "Routes", "Génie Civil"];
+const categories = ["Tous", "Maison Individuelle", "Villa de Luxe", "Logements"];
 
 const Projects = () => {
   return (
@@ -76,7 +76,7 @@ const Projects = () => {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="ZNH BTP Projects"
+            alt="Projets Génie Créatif BTP"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-construction-charcoal via-construction-charcoal/95 to-background" />
@@ -93,11 +93,11 @@ const Projects = () => {
               Nos Réalisations
             </span>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground mb-6">
-              Projets Emblématiques
+              Maisons Construites
             </h1>
             <p className="text-xl text-muted-foreground">
-              Découvrez notre portfolio de projets qui témoignent de notre
-              expertise et de notre engagement envers l'excellence.
+              Découvrez notre portfolio de maisons qui témoignent de notre
+              savoir-faire et de notre créativité au service des familles béninoises.
             </p>
           </motion.div>
         </div>
@@ -148,11 +148,11 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Votre Projet Pourrait Être le Prochain
+              Votre Maison Pourrait Être la Prochaine
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-              Confiez-nous votre vision et nous la transformerons en réalité
-              avec le même niveau d'excellence et de dévouement.
+              Confiez-nous votre projet et nous le réaliserons avec le même 
+              niveau de qualité et de créativité.
             </p>
             <Link to="/contact">
               <Button

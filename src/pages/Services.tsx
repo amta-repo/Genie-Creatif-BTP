@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
-  Building2,
-  Route,
-  Ruler,
-  HardHat,
   Home,
-  Warehouse,
+  Building2,
+  Paintbrush,
+  HardHat,
+  Ruler,
+  Hammer,
   ArrowRight,
   CheckCircle,
 } from "lucide-react";
@@ -15,72 +15,59 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SectionTitle } from "@/components/SectionTitle";
-import heroImage from "@/assets/hero-construction.jpg";
+import heroImage from "@/assets/hero-home.jpg";
 
 const services = [
   {
-    id: "buildings",
-    icon: Building2,
-    title: "Bâtiments Commerciaux",
-    description:
-      "Construction de bureaux, centres commerciaux, hôtels et espaces commerciaux modernes avec des finitions de haute qualité.",
-    features: [
-      "Conception architecturale moderne",
-      "Matériaux de première qualité",
-      "Respect des normes de construction",
-      "Livraison dans les délais",
-    ],
-  },
-  {
     id: "residential",
     icon: Home,
-    title: "Résidentiel",
+    title: "Maisons Individuelles",
     description:
-      "Réalisation de projets résidentiels, des villas de luxe aux immeubles d'appartements, adaptés à vos besoins.",
+      "Construction de maisons familiales personnalisées, adaptées à votre budget et à vos besoins. Du petit pavillon à la grande maison familiale.",
     features: [
-      "Personnalisation complète",
-      "Finitions haut de gamme",
-      "Optimisation de l'espace",
-      "Solutions écoénergétiques",
+      "Plans personnalisés selon vos besoins",
+      "Choix des matériaux de qualité",
+      "Suivi de chantier transparent",
+      "Garantie décennale",
     ],
   },
   {
-    id: "roads",
-    icon: Route,
-    title: "Routes & Voiries",
+    id: "villas",
+    icon: Building2,
+    title: "Villas de Luxe",
     description:
-      "Construction et réhabilitation de routes, autoroutes, ponts et infrastructures de transport pour améliorer la connectivité.",
+      "Réalisation de villas haut de gamme avec des finitions exceptionnelles et des équipements modernes pour un confort optimal.",
     features: [
-      "Études géotechniques approfondies",
-      "Revêtements durables",
-      "Signalisation et sécurité",
-      "Entretien et maintenance",
+      "Architecture contemporaine",
+      "Finitions luxueuses",
+      "Piscine et aménagements extérieurs",
+      "Domotique et sécurité",
     ],
   },
   {
-    id: "infrastructure",
+    id: "design",
     icon: Ruler,
-    title: "Génie Civil",
+    title: "Conception Architecturale",
     description:
-      "Conception et construction d'ouvrages d'art complexes : ponts, tunnels, barrages et structures spéciales.",
+      "Service de conception et de plans architecturaux adaptés au style de vie béninois et aux contraintes de votre terrain.",
     features: [
-      "Ingénierie de pointe",
-      "Calculs structurels avancés",
-      "Matériaux haute résistance",
-      "Contrôle qualité rigoureux",
+      "Étude de faisabilité",
+      "Plans 2D et modélisation 3D",
+      "Permis de construire",
+      "Conseils personnalisés",
     ],
   },
   {
-    id: "industrial",
-    icon: Warehouse,
-    title: "Industriel",
+    id: "finitions",
+    icon: Paintbrush,
+    title: "Finitions Intérieures",
     description:
-      "Construction d'usines, entrepôts, installations de production et infrastructures industrielles.",
+      "Travaux de finitions haut de gamme : peinture, carrelage, menuiserie, plomberie et électricité pour un intérieur parfait.",
     features: [
-      "Grandes portées sans poteaux",
-      "Systèmes de ventilation",
-      "Sols techniques",
-      "Conformité aux normes industrielles",
+      "Peinture décorative",
+      "Pose de carrelage et faïence",
+      "Menuiserie sur mesure",
+      "Installations sanitaires",
     ],
   },
   {
@@ -88,12 +75,25 @@ const services = [
     icon: HardHat,
     title: "Rénovation",
     description:
-      "Travaux de réhabilitation, modernisation et mise aux normes des bâtiments et infrastructures existants.",
+      "Travaux de réhabilitation et de modernisation de votre maison existante pour lui donner une nouvelle vie.",
     features: [
-      "Diagnostic complet",
-      "Préservation du patrimoine",
-      "Mise aux normes actuelles",
+      "Diagnostic de l'existant",
+      "Extension et agrandissement",
+      "Mise aux normes",
       "Amélioration énergétique",
+    ],
+  },
+  {
+    id: "gros-oeuvre",
+    icon: Hammer,
+    title: "Gros Œuvre",
+    description:
+      "Réalisation des travaux de structure : fondations, murs, dalles et toiture pour une construction solide et durable.",
+    features: [
+      "Fondations renforcées",
+      "Maçonnerie de qualité",
+      "Charpente et toiture",
+      "Étanchéité garantie",
     ],
   },
 ];
@@ -109,7 +109,7 @@ const Services = () => {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="ZNH BTP Services"
+            alt="Services Génie Créatif BTP"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-construction-charcoal via-construction-charcoal/95 to-background" />
@@ -126,12 +126,11 @@ const Services = () => {
               Nos Services
             </span>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground mb-6">
-              Des Solutions Complètes
+              Construction de Maisons
             </h1>
             <p className="text-xl text-muted-foreground">
-              De la conception à la réalisation, nous offrons une gamme
-              complète de services de construction pour répondre à tous vos
-              besoins.
+              De la conception à la remise des clés, nous vous accompagnons 
+              dans la réalisation de votre projet de maison au Bénin.
             </p>
           </motion.div>
         </div>
@@ -207,11 +206,11 @@ const Services = () => {
             viewport={{ once: true }}
           >
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Besoin d'un Service Personnalisé ?
+              Un Projet de Construction ?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-              Contactez notre équipe pour discuter de vos besoins spécifiques
-              et obtenir une solution sur mesure.
+              Contactez notre équipe pour discuter de votre projet et 
+              obtenir un devis personnalisé gratuit.
             </p>
             <Link to="/contact">
               <Button

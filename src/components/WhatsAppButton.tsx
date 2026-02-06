@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 export function WhatsAppButton() {
-  const whatsappNumber = "22967741241";
+  const whatsappNumber = "22940152985";
   const whatsappMessage = encodeURIComponent(
-    "Bonjour ZNH BTP, je souhaite avoir plus d'informations sur vos services."
+    "Bonjour Génie Créatif BTP, je souhaite avoir plus d'informations sur vos services de construction de maisons."
   );
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 

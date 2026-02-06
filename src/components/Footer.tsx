@@ -20,9 +20,9 @@ const footerLinks = {
     { name: "Carrières", path: "/contact" },
   ],
   services: [
-    { name: "Bâtiments", path: "/services#buildings" },
-    { name: "Routes", path: "/services#roads" },
-    { name: "Ouvrages d'Art", path: "/services#infrastructure" },
+    { name: "Maisons Individuelles", path: "/services#residential" },
+    { name: "Villas de Luxe", path: "/services#villas" },
+    { name: "Rénovation", path: "/services#renovation" },
   ],
   legal: [
     { name: "Mentions Légales", path: "/legal" },
@@ -41,21 +41,21 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-6">
-              <span className="font-display text-4xl tracking-wider text-primary">
-                ZNH
+              <span className="font-display text-3xl tracking-wider text-primary">
+                Génie Créatif
               </span>
-              <span className="font-display text-4xl tracking-wider text-foreground">
+              <span className="font-display text-3xl tracking-wider text-foreground">
                 {" "}BTP
               </span>
             </Link>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Leader de la construction au Bénin, ZNH BTP s'engage à bâtir des
-              infrastructures durables et de qualité pour façonner l'avenir.
+              Spécialiste de la construction de maisons au Bénin, Génie Créatif BTP 
+              s'engage à bâtir votre foyer avec qualité et créativité.
             </p>
             {/* Social Links */}
             <div className="flex items-center gap-4">
               <a
-                href="https://facebook.com/znhbtp"
+                href="https://facebook.com/geniecreativebtp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-muted/20 flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
@@ -64,7 +64,7 @@ export function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://instagram.com/znhbtp"
+                href="https://instagram.com/geniecreativebtp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-muted/20 flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
@@ -73,7 +73,7 @@ export function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://tiktok.com/@znhbtp"
+                href="https://tiktok.com/@geniecreativebtp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-muted/20 flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
@@ -82,7 +82,7 @@ export function Footer() {
                 <TikTokIcon className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contact@znhbtp.com"
+                href="mailto:contact@geniecreativebtp.com"
                 className="w-10 h-10 rounded-full bg-muted/20 flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
                 aria-label="Email"
               >
@@ -136,31 +136,31 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="tel:+22901677412 41"
+                  href="tel:+22901401529 85"
                   className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                  <span>+229 01 67 74 12 41</span>
+                  <span>+229 01 40 15 29 85</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:contact@znhbtp.com"
+                  href="mailto:contact@geniecreativebtp.com"
                   className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                  <span>contact@znhbtp.com</span>
+                  <span>contact@geniecreativebtp.com</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.google.com/maps/place/ZNH+BTP/@6.4502976,2.3449593,17z"
+                  href="https://www.google.com/maps/place/G%C3%A9nie+Cr%C3%A9atif+BTP/@6.3780562,2.4405404,17z"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                  <span>Cotonou, Bénin</span>
+                  <span>9CHV+66 Cotonou, Bénin</span>
                 </a>
               </li>
             </ul>
@@ -172,7 +172,7 @@ export function Footer() {
       <div className="border-t border-border/20">
         <div className="container-wide py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} ZNH BTP. Tous droits réservés.
+            © {currentYear} Génie Créatif BTP. Tous droits réservés.
           </p>
           <div className="flex items-center gap-6">
             {footerLinks.legal.map((link) => (

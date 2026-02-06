@@ -9,27 +9,27 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SectionTitle } from "@/components/SectionTitle";
 import { useToast } from "@/hooks/use-toast";
-import heroImage from "@/assets/hero-construction.jpg";
+import heroImage from "@/assets/hero-home.jpg";
 
 const contactInfo = [
   {
     icon: Phone,
     title: "Téléphone",
-    details: ["+229 01 67 74 12 41", "+229 67 74 12 41"],
-    action: "tel:+22901677412 41",
+    details: ["+229 01 40 15 29 85", "+229 40 15 29 85"],
+    action: "tel:+22901401529 85",
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["contact@znhbtp.com"],
-    action: "mailto:contact@znhbtp.com",
+    details: ["contact@geniecreativebtp.com"],
+    action: "mailto:contact@geniecreativebtp.com",
   },
   {
     icon: MapPin,
     title: "Adresse",
-    details: ["Cotonou, Bénin"],
+    details: ["9CHV+66 Cotonou, Bénin"],
     action:
-      "https://www.google.com/maps/place/ZNH+BTP/@6.4502976,2.3449593,17z",
+      "https://www.google.com/maps/place/G%C3%A9nie+Cr%C3%A9atif+BTP/@6.3780562,2.4405404,17z",
   },
   {
     icon: Clock,
@@ -80,9 +80,9 @@ const Contact = () => {
     setIsSubmitting(false);
   };
 
-  const whatsappNumber = "22967741241";
+  const whatsappNumber = "22940152985";
   const whatsappMessage = encodeURIComponent(
-    "Bonjour ZNH BTP, je souhaite avoir plus d'informations sur vos services."
+    "Bonjour Génie Créatif BTP, je souhaite avoir plus d'informations sur vos services de construction de maisons."
   );
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -96,7 +96,7 @@ const Contact = () => {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="Contact ZNH BTP"
+            alt="Contact Génie Créatif BTP"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-construction-charcoal via-construction-charcoal/95 to-background" />
@@ -117,7 +117,7 @@ const Contact = () => {
             </h1>
             <p className="text-xl text-muted-foreground">
               Notre équipe est à votre disposition pour répondre à toutes vos
-              questions et vous accompagner dans vos projets de construction.
+              questions et vous accompagner dans votre projet de construction.
             </p>
           </motion.div>
         </div>
@@ -283,7 +283,7 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="Décrivez votre projet ou votre demande..."
+                    placeholder="Décrivez votre projet de construction..."
                     rows={6}
                     required
                     className="bg-card resize-none"
@@ -336,24 +336,24 @@ const Contact = () => {
 
               <div className="aspect-[4/3] lg:aspect-auto lg:h-[500px] rounded-lg overflow-hidden border border-border/50">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2694287847397!2d2.344959315284847!3d6.450297624935655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1024a96b88789763%3A0xcb3317f04411dd93!2sZNH%20BTP!5e0!3m2!1sfr!2sfr!4v1707000000000!5m2!1sfr!2sfr"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.123456789!2d2.4405404!3d6.3780562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102355047f993ef5%3A0x70703dcc25d3edcc!2sG%C3%A9nie%20Cr%C3%A9atif%20BTP!5e0!3m2!1sfr!2sfr!4v1707000000000!5m2!1sfr!2sfr"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="ZNH BTP Location"
+                  title="Génie Créatif BTP Location"
                 />
               </div>
 
               <div className="mt-6 p-6 bg-card border border-border/50 rounded-lg">
                 <h3 className="font-display text-xl mb-2 text-foreground">
-                  ZNH BTP
+                  Génie Créatif BTP
                 </h3>
-                <p className="text-muted-foreground">Cotonou, Bénin</p>
+                <p className="text-muted-foreground">9CHV+66 Cotonou, Bénin</p>
                 <a
-                  href="https://www.google.com/maps/place/ZNH+BTP/@6.4502976,2.3449593,17z"
+                  href="https://www.google.com/maps/place/G%C3%A9nie+Cr%C3%A9atif+BTP/@6.3780562,2.4405404,17z"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-primary hover:underline mt-3"
