@@ -41,10 +41,10 @@ export function Header() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <div className="relative">
-            <span className="font-display text-3xl md:text-4xl tracking-wider text-primary">
-              ZNH
+            <span className="font-display text-2xl md:text-3xl tracking-wider text-primary">
+              Génie Créatif
             </span>
-            <span className="font-display text-3xl md:text-4xl tracking-wider text-foreground">
+            <span className="font-display text-2xl md:text-3xl tracking-wider text-foreground">
               {" "}BTP
             </span>
           </div>
@@ -76,11 +76,11 @@ export function Header() {
         {/* CTA Button */}
         <div className="hidden lg:flex items-center gap-4">
           <a
-            href="tel:+22901677412 41"
+            href="tel:+22901401529 85"
             className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
           >
             <Phone className="w-4 h-4" />
-            <span>+229 01 67 74 12 41</span>
+            <span>+229 01 40 15 29 85</span>
           </a>
           <Link to="/contact">
             <Button variant="default" size="sm" className="font-semibold">
@@ -128,11 +128,11 @@ export function Header() {
               ))}
               <div className="pt-4 border-t border-border/20">
                 <a
-                  href="tel:+22901677412 41"
+                  href="tel:+22901401529 85"
                   className="flex items-center gap-2 text-foreground/80 mb-4"
                 >
                   <Phone className="w-5 h-5" />
-                  <span>+229 01 67 74 12 41</span>
+                  <span>+229 01 40 15 29 85</span>
                 </a>
                 <Link to="/contact" className="block">
                   <Button variant="default" className="w-full font-semibold">

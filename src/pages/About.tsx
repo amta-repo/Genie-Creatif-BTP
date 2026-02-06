@@ -5,40 +5,40 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SectionTitle } from "@/components/SectionTitle";
 import { StatCard } from "@/components/StatCard";
-import heroImage from "@/assets/hero-construction.jpg";
-import aboutTeam from "@/assets/about-team.jpg";
+import heroImage from "@/assets/hero-home.jpg";
+import teamConstruction from "@/assets/team-construction.jpg";
 
 const stats = [
-  { value: "15+", label: "Années d'Expérience" },
-  { value: "200+", label: "Projets Réalisés" },
-  { value: "50+", label: "Professionnels" },
+  { value: "10+", label: "Années d'Expérience" },
+  { value: "150+", label: "Maisons Construites" },
+  { value: "30+", label: "Professionnels" },
   { value: "100%", label: "Satisfaction Client" },
 ];
 
 const values = [
   {
     icon: Target,
-    title: "Excellence",
+    title: "Créativité",
     description:
-      "Nous visons l'excellence dans chaque aspect de notre travail, de la planification à l'exécution.",
+      "Nous concevons des maisons uniques qui reflètent la personnalité et les besoins de chaque client.",
   },
   {
     icon: Users,
-    title: "Collaboration",
+    title: "Proximité",
     description:
-      "Nous travaillons en étroite collaboration avec nos clients pour comprendre et réaliser leur vision.",
+      "Nous travaillons en étroite collaboration avec nos clients à chaque étape du projet.",
   },
   {
     icon: Award,
     title: "Qualité",
     description:
-      "La qualité est au cœur de tout ce que nous faisons, garantissant des résultats durables.",
+      "Nous utilisons des matériaux de première qualité pour des constructions durables.",
   },
   {
     icon: CheckCircle,
-    title: "Intégrité",
+    title: "Fiabilité",
     description:
-      "Nous agissons avec transparence et honnêteté dans toutes nos relations professionnelles.",
+      "Nous respectons nos engagements en termes de délais, de budget et de qualité.",
   },
 ];
 
@@ -53,7 +53,7 @@ const About = () => {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="ZNH BTP Construction"
+            alt="Génie Créatif BTP"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-construction-charcoal via-construction-charcoal/95 to-background" />
@@ -70,11 +70,11 @@ const About = () => {
               À Propos
             </span>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground mb-6">
-              Notre Histoire, Notre Vision
+              Notre Histoire, Notre Passion
             </h1>
             <p className="text-xl text-muted-foreground">
-              Depuis plus de 15 ans, ZNH BTP façonne le paysage du Bénin à
-              travers des projets de construction innovants et durables.
+              Depuis plus de 10 ans, Génie Créatif BTP construit des maisons 
+              de qualité au Bénin, alliant créativité et savoir-faire artisanal.
             </p>
           </motion.div>
         </div>
@@ -103,25 +103,26 @@ const About = () => {
             >
               <SectionTitle
                 subtitle="Notre Histoire"
-                title="Un Parcours d'Excellence"
+                title="Un Parcours de Créativité"
               />
               <div className="space-y-6 text-muted-foreground">
                 <p>
-                  Fondée avec la vision de transformer le secteur de la
-                  construction au Bénin, ZNH BTP a commencé son aventure avec
-                  une équipe passionnée et déterminée à faire la différence.
+                  Fondée avec la vision de transformer le secteur de la 
+                  construction résidentielle au Bénin, Génie Créatif BTP 
+                  a commencé son aventure avec une équipe passionnée par 
+                  l'architecture et la construction.
                 </p>
                 <p>
-                  Au fil des années, nous avons développé une expertise
-                  reconnue dans la construction de bâtiments, la réalisation
-                  de routes et la conception d'ouvrages d'art. Notre
-                  engagement envers la qualité et l'innovation nous a permis
-                  de devenir un acteur incontournable du secteur.
+                  Au fil des années, nous avons développé une expertise 
+                  reconnue dans la construction de maisons individuelles, 
+                  villas de luxe et logements collectifs. Notre approche 
+                  créative nous distingue et nous permet de réaliser des 
+                  projets uniques.
                 </p>
                 <p>
-                  Aujourd'hui, ZNH BTP est fier d'avoir contribué à plus de
-                  200 projets majeurs, créant des infrastructures qui servent
-                  des milliers de personnes chaque jour.
+                  Aujourd'hui, Génie Créatif BTP est fier d'avoir construit 
+                  plus de 150 maisons, offrant à des familles béninoises 
+                  un foyer de qualité adapté à leur mode de vie.
                 </p>
               </div>
             </motion.div>
@@ -135,8 +136,8 @@ const About = () => {
             >
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
                 <img
-                  src={aboutTeam}
-                  alt="Équipe ZNH BTP"
+                  src={teamConstruction}
+                  alt="Équipe Génie Créatif BTP"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -153,7 +154,7 @@ const About = () => {
           <SectionTitle
             subtitle="Nos Valeurs"
             title="Ce Qui Nous Guide"
-            description="Nos valeurs fondamentales définissent notre approche et notre engagement envers l'excellence."
+            description="Nos valeurs fondamentales définissent notre approche et notre engagement envers nos clients."
             centered
           />
 
@@ -186,7 +187,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-center">
             <SectionTitle
               subtitle="Notre Mission"
-              title="Bâtir un Avenir Durable"
+              title="Construire Votre Bonheur"
               centered
             />
             <motion.p
@@ -196,11 +197,11 @@ const About = () => {
               viewport={{ once: true }}
               className="text-xl text-muted-foreground leading-relaxed"
             >
-              Notre mission est de fournir des solutions de construction
-              innovantes et durables qui répondent aux besoins de nos clients
-              tout en contribuant au développement économique et social du
-              Bénin. Nous nous engageons à respecter les plus hauts standards
-              de qualité, de sécurité et de responsabilité environnementale.
+              Notre mission est de construire des maisons qui deviennent de 
+              véritables foyers pour les familles béninoises. Nous nous engageons 
+              à offrir des constructions de qualité, personnalisées et accessibles, 
+              tout en respectant l'environnement et les traditions architecturales 
+              locales.
             </motion.p>
           </div>
         </div>

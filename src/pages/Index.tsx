@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Building2, Route, Ruler, HardHat } from "lucide-react";
+import { ArrowRight, Home, Paintbrush, Ruler, HardHat } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -9,64 +9,64 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionTitle } from "@/components/SectionTitle";
 import { StatCard } from "@/components/StatCard";
-import heroImage from "@/assets/hero-construction.jpg";
-import projectRoad from "@/assets/project-road.jpg";
-import projectBuilding from "@/assets/project-building.jpg";
-import projectBridge from "@/assets/project-bridge.jpg";
-import aboutTeam from "@/assets/about-team.jpg";
+import heroImage from "@/assets/hero-home.jpg";
+import projectVilla from "@/assets/project-villa.jpg";
+import projectTownhouse from "@/assets/project-townhouse.jpg";
+import projectFamilyHome from "@/assets/project-family-home.jpg";
+import teamConstruction from "@/assets/team-construction.jpg";
 
 const services = [
   {
-    icon: Building2,
-    title: "Bâtiments",
+    icon: Home,
+    title: "Maisons Individuelles",
     description:
-      "Construction de bâtiments résidentiels, commerciaux et industriels avec les normes de qualité les plus élevées.",
+      "Construction de maisons familiales personnalisées selon vos besoins et votre budget.",
   },
   {
-    icon: Route,
-    title: "Routes & Voiries",
+    icon: Paintbrush,
+    title: "Finitions Haut de Gamme",
     description:
-      "Réalisation de routes, autoroutes et infrastructures routières durables pour connecter les communautés.",
+      "Des finitions soignées et des matériaux de qualité pour un intérieur élégant et durable.",
   },
   {
     icon: Ruler,
-    title: "Génie Civil",
+    title: "Conception sur Mesure",
     description:
-      "Conception et construction d'ouvrages d'art : ponts, tunnels, barrages et structures complexes.",
+      "Plans architecturaux personnalisés adaptés au style de vie béninois et à votre terrain.",
   },
   {
     icon: HardHat,
     title: "Rénovation",
     description:
-      "Travaux de réhabilitation et de modernisation des infrastructures existantes.",
+      "Travaux de réhabilitation et de modernisation de votre maison existante.",
   },
 ];
 
 const projects = [
   {
-    image: projectRoad,
-    title: "Autoroute Nationale N1",
-    category: "Routes",
-    location: "Cotonou - Porto-Novo",
+    image: projectVilla,
+    title: "Villa Moderne Akpakpa",
+    category: "Villa de Luxe",
+    location: "Akpakpa, Cotonou",
   },
   {
-    image: projectBuilding,
-    title: "Centre Commercial Étoile",
-    category: "Bâtiments",
-    location: "Cotonou, Bénin",
+    image: projectTownhouse,
+    title: "Résidence Les Palmiers",
+    category: "Logements",
+    location: "Abomey-Calavi",
   },
   {
-    image: projectBridge,
-    title: "Pont de l'Ouémé",
-    category: "Génie Civil",
-    location: "Ouémé, Bénin",
+    image: projectFamilyHome,
+    title: "Maison Familiale Fidjrossè",
+    category: "Maison Individuelle",
+    location: "Fidjrossè, Cotonou",
   },
 ];
 
 const stats = [
-  { value: "15+", label: "Années d'Expérience" },
-  { value: "200+", label: "Projets Réalisés" },
-  { value: "50+", label: "Professionnels" },
+  { value: "10+", label: "Années d'Expérience" },
+  { value: "150+", label: "Maisons Construites" },
+  { value: "30+", label: "Professionnels" },
   { value: "100%", label: "Satisfaction Client" },
 ];
 
@@ -82,7 +82,7 @@ const Index = () => {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="ZNH BTP Construction"
+            alt="Génie Créatif BTP - Construction de Maisons"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-construction-charcoal/70" />
@@ -97,7 +97,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-4 py-2 bg-primary/20 text-primary font-semibold text-sm uppercase tracking-wider rounded-full mb-6">
-              Excellence en Construction
+              Constructeur de Maisons au Bénin
             </span>
           </motion.div>
 
@@ -107,9 +107,9 @@ const Index = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-6 leading-tight"
           >
-            Bâtissons <span className="text-gradient-amber">l'Avenir</span>
+            Votre <span className="text-gradient-amber">Maison de Rêve</span>
             <br />
-            Ensemble
+            Devient Réalité
           </motion.h1>
 
           <motion.p
@@ -118,8 +118,8 @@ const Index = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-10"
           >
-            ZNH BTP, votre partenaire de confiance pour tous vos projets de
-            construction au Bénin et en Afrique de l'Ouest.
+            Génie Créatif BTP, votre partenaire de confiance pour la construction 
+            de maisons personnalisées au Bénin.
           </motion.p>
 
           <motion.div
@@ -143,7 +143,7 @@ const Index = () => {
                 size="lg"
                 className="font-semibold text-lg px-8 py-6 border-foreground/30 hover:bg-foreground/10"
               >
-                Voir Nos Projets
+                Voir Nos Réalisations
               </Button>
             </Link>
           </motion.div>
@@ -189,26 +189,26 @@ const Index = () => {
             >
               <SectionTitle
                 subtitle="À Propos de Nous"
-                title="Une Expertise Reconnue Depuis Plus de 15 Ans"
-                description="ZNH BTP est une entreprise de construction leader au Bénin, spécialisée dans la réalisation de projets d'envergure. Notre engagement envers la qualité et l'innovation nous distingue."
+                title="Experts en Construction Résidentielle depuis 10 Ans"
+                description="Génie Créatif BTP est une entreprise spécialisée dans la construction de maisons au Bénin. Notre créativité et notre savoir-faire nous permettent de réaliser des projets uniques."
               />
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2" />
                   <p className="text-muted-foreground">
-                    Équipe hautement qualifiée et expérimentée
+                    Équipe d'artisans qualifiés et expérimentés
                   </p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2" />
                   <p className="text-muted-foreground">
-                    Respect des délais et des budgets
+                    Respect des délais et des budgets convenus
                   </p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2" />
                   <p className="text-muted-foreground">
-                    Normes de sécurité internationales
+                    Matériaux de qualité et finitions soignées
                   </p>
                 </div>
               </div>
@@ -229,8 +229,8 @@ const Index = () => {
             >
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
                 <img
-                  src={aboutTeam}
-                  alt="Équipe ZNH BTP"
+                  src={teamConstruction}
+                  alt="Équipe Génie Créatif BTP"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -247,8 +247,8 @@ const Index = () => {
         <div className="container-wide">
           <SectionTitle
             subtitle="Nos Services"
-            title="Des Solutions Complètes pour Vos Projets"
-            description="De la conception à la réalisation, nous offrons une gamme complète de services de construction adaptés à vos besoins."
+            title="Construction de Maisons Sur Mesure"
+            description="De la conception à la remise des clés, nous vous accompagnons dans la réalisation de votre projet immobilier."
             centered
           />
 
@@ -280,8 +280,8 @@ const Index = () => {
         <div className="container-wide">
           <SectionTitle
             subtitle="Nos Réalisations"
-            title="Des Projets Qui Font Notre Fierté"
-            description="Découvrez quelques-uns de nos projets emblématiques qui témoignent de notre savoir-faire et de notre engagement."
+            title="Des Maisons Qui Font Notre Fierté"
+            description="Découvrez quelques-unes de nos réalisations qui témoignent de notre savoir-faire et de notre créativité."
             centered
           />
 
@@ -300,7 +300,7 @@ const Index = () => {
           >
             <Link to="/projects">
               <Button variant="outline" size="lg" className="font-semibold">
-                Voir Tous Les Projets
+                Voir Toutes Nos Réalisations
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
@@ -326,11 +326,11 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Prêt à Démarrer Votre Projet ?
+              Prêt à Construire Votre Maison ?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-              Contactez-nous dès aujourd'hui pour discuter de vos besoins et
-              obtenir un devis personnalisé.
+              Contactez-nous dès aujourd'hui pour discuter de votre projet et
+              obtenir un devis personnalisé gratuit.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/contact">
@@ -342,13 +342,13 @@ const Index = () => {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
-              <a href="tel:+22901677412 41">
+              <a href="tel:+22901401529 85">
                 <Button
                   variant="outline"
                   size="lg"
                   className="font-semibold text-lg px-8 py-6 border-foreground/30 hover:bg-foreground/10"
                 >
-                  +229 01 67 74 12 41
+                  +229 01 40 15 29 85
                 </Button>
               </a>
             </div>
